@@ -139,16 +139,16 @@ namespace EnchantSpellFix
                                 //BlueprintAbility ba = buff.Context.SourceAbility;
                                 //MechanicsContext newContext = buff.Context.CloneFor(ba, buff.Context.MainTarget.Unit.Descriptor, buff.Context.MaybeCaster);
                             MechanicsContext newContext = buff.Context;
-                            AbilityRankType art = AbilityRankType.ProjectilesCount;
+                            /*AbilityRankType art = AbilityRankType.ProjectilesCount;
                             int val = newContext[art];
-                            /*logger.Log("val: " + val);
+                            logger.Log("val: " + val);
                             newContext.Recalculate();
                             logger.Log("newval: " + newContext[art]);
 
                             logger.Log("newContext caster: " + newContext.MaybeCaster.CharacterName);
 
                             logger.Log("blueprint : " + newContext.AssociatedBlueprint.GetType().Name);*/
-                                executionContext = new AbilityExecutionContext(new AbilityData(newContext.SourceAbility, newContext.MaybeCaster), newContext.Params, newContext.MaybeCaster);
+                            executionContext = new AbilityExecutionContext(new AbilityData(newContext.SourceAbility, newContext.MaybeCaster), newContext.Params, newContext.MaybeCaster);
                             if (!doLast)
                             {
                                 buffOrderList.AddFirst(executionContext);
