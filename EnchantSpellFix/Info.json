@@ -1,0 +1,7 @@
+{
+  "Id": "EnchantSpellFix",
+  "DisplayName": "EnchantSpellFix",
+  "Author": "ArmadilloMan",
+  "Version": "1.0.0",
+  "EntryMethod": "EnchantSpellFix.Main.Load"
+}

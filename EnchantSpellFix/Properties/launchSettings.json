@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "Profile 1": {
+      "commandName": "Executable",
+      "executablePath": "E:\\SteamLibrary\\steamapps\\common\\Pathfinder Second Adventure\\Wrath.exe",
+      "workingDirectory": "E:\\SteamLibrary\\steamapps\\common\\Pathfinder Second Adventure",
+      "nativeDebugging": false
+    }
+  }
+}
