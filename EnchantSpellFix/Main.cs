@@ -21,6 +21,7 @@ using Kingmaker.UnitLogic.Mechanics;
 using Kingmaker.UnitLogic.Mechanics.Actions;
 using Kingmaker.Utility;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Reflection;
 using System.Runtime.Remoting.Contexts;
@@ -49,8 +50,8 @@ namespace EnchantSpellFix
             {
                 Main.logger = modEntry.Logger;
                 dictionary = new Dictionary<string, byte>();
-                dictionary.Add("Magic Fang", 0);
-                dictionary.Add("Magic Fang, Greater", 0);
+                //dictionary.Add("Magic Fang", 0);
+                //dictionary.Add("Magic Fang, Greater", 0);
                 dictionary.Add("Magic Weapon, Primary", 0);
                 dictionary.Add("Magic Weapon, Secondary", 0);
                 dictionary.Add("Keen Edge — Primary Hand", 0);
@@ -61,6 +62,7 @@ namespace EnchantSpellFix
                 dictionary.Add("Magical Vestment, Shield", 0);
                 dictionary.Add("Arcane Weapon Enhancement", 0);
                 dictionary.Add("Spirit Weapon Enhancement", 0);
+                dictionary.Add("Crusader's Edge", 0);
 
             /*Type targetType = typeof(EquipmentWeaponTypeEnhancement); // Replace YourTargetClass
             MethodInfo originalMethod = targetType.GetMethod("YourPrivateMethodName", new Type[] { typeof(ItemEntityWeapon) });
